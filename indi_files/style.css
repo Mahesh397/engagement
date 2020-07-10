@@ -1,0 +1,297 @@
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+.hbtn {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .hbtn:before, .hbtn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #252525;
+  }
+  .hbtn:before {
+    top: 0;
+  }
+  .hbtn:after {
+    bottom: 0;
+  }
+  .hbtn:hover > * > *:before, .hbtn:hover > * > *:after {
+    transform: translate3d(0, 0, 0);
+  }
+  .hbtn:hover > * > * > *:before, .hbtn:hover > * > * > *:after {
+    transform: translate3d(0, 0, 0);
+  }
+  .hbtn > *:before, .hbtn > *:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #252525;
+  }
+  .hbtn > *:before {
+    left: 0;
+  }
+  .hbtn > *:after {
+    right: 0;
+  }
+  .hbtn > * > *:before, .hbtn > * > *:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    height: 2px;
+    width: 100%;
+    background-color: #168dff;
+  }
+  .hbtn > * > *:before {
+    top: 0;
+    transform: translate3d(-105%, 0, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hbtn > * > *:after {
+    bottom: 0;
+    transform: translate3d(105%, 0, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hbtn > * > * > *:before, .hbtn > * > * > *:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 2px;
+    background-color: #168dff;
+  }
+  .hbtn > * > * > *:before {
+    left: 0;
+    transform: translate3d(0, 105%, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hbtn > * > * > *:after {
+    right: 0;
+    transform: translate3d(0, -105%, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  h3.hbtn {
+    width: 97%;
+    text-align: center;
+}  
+
+.carousel-inner > .carousel-item > img { width:100%; height:570px; }
+.bg-dark {
+    background-color: #185ee2!important;
+}
+li.nav-item a {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+li.nav-item a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+li.nav-item a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+li.nav-item a:active::before {
+    background-color: green;
+}
+li.nav-item a:hover::before, li.nav-item a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}/*
+li.nav-item {
+    margin: 0 0 0 12%;
+}
+.nav-item a:before{
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 3px;
+  bottom: 0;
+  background:#fff;
+  visibility: hidden;
+  border-radius: 15px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.nav-item a:hover:before,.nav-item a:focus:before{
+  visibility: visible;    
+  transform: scaleX(1);
+}
+.nav-item a:hover{
+  color:#fff !important;
+}
+*/
+
+/*** top icon with borders ***/
+.section-bg{
+	position: relative;
+	border: 1px solid #bbbdbe;
+	width: 58px;
+	height: 59px;
+	padding: 7px;
+	margin: 0 auto 15px auto;
+	line-height: 44px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.section-bg:before{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 10px;
+	border-left: 1px solid #bbbdbe;
+	top: -20px;
+	left: 50%;
+	opacity: 0;
+}
+.section-bg:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 10px;
+	border-left: 1px solid #bbbdbe;
+	top: 20px;
+	right: -18px;
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+	opacity: 0;
+}
+
+#skills .col img.img-responsive {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+.card .card-image{
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.card-image {
+    height: 250px;
+}
+.card .card-header, h5.card-title {
+    color: #185ee2;
+}
+.card .card-image img{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	width: 100%;
+}
+
+.card .card-image:hover img{
+    -webkit-transform: scale(1.2) rotate(-7deg);
+    -moz-transform: scale(1.2) rotate(-7deg);
+    -ms-transform: scale(1.2) rotate(-7deg);
+    -o-transform: scale(1.2) rotate(-7deg);
+    transform: scale(1.2) rotate(-7deg);
+}
+
+.card{
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-content {
+    padding: 10px;    
+}
+
+.card .card-content .card-title, .card-reveal .card-title, .CitiBank_crdrvl .card-title, .DFB-reveal .card-title, .genius--reveal1 .card-title, .Green-reveal .card-title,  .ntu-reveal .card-title{
+    font-size: 24px;
+    font-weight: 200;    
+}
+
+.card .card-action{
+    padding: 20px;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+.card .card-action a{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform:uppercase;
+    margin-right: 20px;    
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.card .card-action a:hover{    
+    color:#ffd8a6;
+    text-decoration:none;
+}
+
+.card .card-reveal, .card .CitiBank_crdrvl, .card .DFB-reveal, .card .genius-reveal, .card .Green-reveal, .card .ntu-reveal{    
+    padding: 20px;
+    position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    overflow-y: auto;
+    /*top: 0;*/
+    left:0;
+    bottom:0;
+    height: 100%;
+    z-index: 1;
+    display: none;    
+}
+
+.card .card-reveal p,.card .CitiBank_crdrvl p, .card .DFB-reveal p, .card .genius-reveal p, .card .Green-reveal p, .card .ntu-reveal p{
+    color: rgba(0, 0, 0, 0.71);
+    margin:20px ;
+}
+
+.btn-custom{
+    background-color: transparent;
+    font-size:18px;
+}
+
+#Experience .card img{
+    max-height: 60px;
+}
